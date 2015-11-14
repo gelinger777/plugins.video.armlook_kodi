@@ -37,11 +37,19 @@ minLength = mins[int(minLength)]
 
 
 def index():
-   addDir("ArmeniaTV", "1", 'listChannel', baseUrl+"/uploads/images/channels/banners/armenia.jpg")
-  # addDir("ATV", "25", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_548ea6775a962.jpg")
+   addDir("ArmeniaTV", "1", 'listChannel', baseUrl+"/uploads/images/channels/banners/armenia.jpg")  
+   addDir("Kentron", "3", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_522fc19eb4449.jpg")
+   addDir("Yerkir Media", "5", 'listChannel', baseUrl+"/uploads/images/channels/banners/yerk.jpg")
+   addDir("LaymTV", "20", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/laym.jpg")
+   addDir("AR-TV", "22", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/artv.jpg")
+   addDir("Dar21", "19", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/21.jpg")
+   addDir("ShoghakatTV", "21", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/shogh-541.jpg")
+   addDir("PanArmenianTV", "21", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/img_54d2f9a578d1b.jpg")
+   addDir("ATV", "25", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_548ea6775a962.jpg")
    addDir("ShantTV", "2", 'listChannel', baseUrl+"/uploads/images/channels/banners/shant-1_1601x600.jpg")
-   #addDir("H1", "6", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
-   #addDir("Armnews", "4", 'listChannel', baseUrl+"/uploads/images/channels/banners/armnewsbanner.jpg")
+   addDir("H1", "6", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
+   addDir("Kino24", "x3axkxe", 'play100sec', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
+   addDir("Armnews", "4", 'listChannel', baseUrl+"/uploads/images/channels/banners/armnewsbanner.jpg")
    xbmcplugin.endOfDirectory(pluginhandle)
 
 
@@ -125,9 +133,8 @@ def listVideos(url):
 
 
 def play100sec():
-    content = getUrl(baseUrl+"/ZDFmediathek/100sec")
-    match = re.compile('assetID : (.+?),', re.DOTALL).findall(content)
-    playVideo(match[0])
+     playback_url = 'plugin://plugin.video.dailymotion_com/?mode=playVideo&url=x3b4rij'
+     xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(playback_url)
 
 
 
@@ -151,7 +158,7 @@ def playVideo(url):
     print match
     if len(match)!=0:
         
-       li = xbmcgui.ListItem(label="Pizdec", iconImage="http://www.armlook.com/images/logo.png", path=match[0])
+       li = xbmcgui.ListItem(label="Armlook Stream", iconImage="http://www.armlook.com/images/logo.png", path=match[0])
        li.setInfo(type='Video', infoLabels={ "Title": "pizdec" })
        li.setProperty('IsPlayable', 'true')
        xbmc.Player().play(item=match[1], listitem=li)
