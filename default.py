@@ -37,6 +37,9 @@ minLength = mins[int(minLength)]
 
 
 def index():
+ 
+   import urllib, json
+
    addDir("ArmeniaTV", "1", 'listChannel', baseUrl+"/uploads/images/channels/banners/armenia.jpg")  
    addDir("Kentron", "3", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_522fc19eb4449.jpg")
    addDir("Yerkir Media", "5", 'listChannel', baseUrl+"/uploads/images/channels/banners/yerk.jpg")
@@ -48,7 +51,6 @@ def index():
    addDir("ATV", "25", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_548ea6775a962.jpg")
    addDir("ShantTV", "2", 'listChannel', baseUrl+"/uploads/images/channels/banners/shant-1_1601x600.jpg")
    addDir("H1", "6", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
-   addDir("Kino24", "x3axkxe", 'play100sec', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
    addDir("Armnews", "4", 'listChannel', baseUrl+"/uploads/images/channels/banners/armnewsbanner.jpg")
    xbmcplugin.endOfDirectory(pluginhandle)
 
@@ -139,7 +141,38 @@ def play100sec():
 
 
 
+def get_yt_video_id(url):
+    """Returns Video_ID extracting from the given url of Youtube
+    
+    Examples of URLs:
+      Valid:
+        'http://youtu.be/_lOT2p_FCvA',
+        'www.youtube.com/watch?v=_lOT2p_FCvA&feature=feedu',
+        'http://www.youtube.com/embed/_lOT2p_FCvA',
+        'http://www.youtube.com/v/_lOT2p_FCvA?version=3&amp;hl=en_US',
+        'https://www.youtube.com/watch?v=rTHlyTphWP0&index=6&list=PLjeDyYvG6-40qawYNR4juzvSOg-ezZ2a6',
+        'youtube.com/watch?v=_lOT2p_FCvA',
+      
+      Invalid:
+        'youtu.be/watch?v=_lOT2p_FCvA',
+    """
 
+    from urlparse import urlparse, parse_qs
+
+    if url.startswith(('youtu', 'www')):
+        url = 'http://' + url
+        
+    query = urlparse(url)
+    
+    if 'youtube' in query.hostname:
+        if query.path == '/watch':
+            return parse_qs(query.query)['v'][0]
+        elif query.path.startswith(('/embed/', '/v/')):
+            return query.path.split('/')[2]
+    elif 'youtu.be' in query.hostname:
+        return query.path[1:]
+    else:
+        raise ValueError
 
 def playVideo(url):
 
@@ -164,17 +197,12 @@ def playVideo(url):
        xbmc.Player().play(item=match[1], listitem=li)
     else:
             print"mta list stugman"
-            match3 = re.compile('width="853" height="480" src="//(.+?)"', re.DOTALL).findall(content)
-            print match3[0]      
-            url2="http://"+match3[0]     
-            content2 = getUrl(url2)
-            print content2
-            match4 = re.compile('<link rel="canonical" href="(.+?)"', re.DOTALL).findall(content2)
-            video_link=match4[0]
-
-            url_data = urlparse.urlparse(video_link)
-            query = urlparse.parse_qs(url_data.query)
-            video_id = query["v"][0]
+            match3 = re.compile('<iframe width="(.+?)" height="(.+?)" src="//www.youtube.com/embed/(.+?)"', re.DOTALL).findall(content)
+            print match3[0][2]      
+            #url2="https://www.youtube.com/embed/"+match3[2]     
+            #print url2
+            video_id = match3[0][2]
+            print video_id
 
             #video_id = match4[0]
             print "uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuh"+video_id
