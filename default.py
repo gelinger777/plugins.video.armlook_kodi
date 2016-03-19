@@ -52,6 +52,7 @@ def index():
    addDir("ShantTV", "2", 'listChannel', baseUrl+"/uploads/images/channels/banners/shant-1_1601x600.jpg")
    addDir("H1", "6", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
    addDir("Armnews", "4", 'listChannel', baseUrl+"/uploads/images/channels/banners/armnewsbanner.jpg")
+
    xbmcplugin.endOfDirectory(pluginhandle)
 
 
@@ -105,6 +106,31 @@ def listChannel(url):
         #addDir(translation(30008), baseUrl+"/ZDFmediathek/senderstartseite/sst1/1209122", 'listShows', "")
         #addDir(translation(30007), baseUrl+"/ZDFmediathek/senderstartseite/sst2/1209122", 'listVideos', "")
         xbmcplugin.endOfDirectory(pluginhandle)
+
+def listChannelNews(url):
+
+
+        url="http://www.armlook.com/channel/allNews/"+url+"/limit/40/offset/0";
+
+        req = urllib2.Request(url)
+        req.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 6.1; rv:22.0) Gecko/20100101 Firefox/22.0')
+        response = urllib2.urlopen(req)
+
+        jsonObj=json.load(response)
+        response.close()
+        #print jsonObj
+
+        for show in jsonObj:
+          print show
+          url=show['id']
+          addDir(show['p'], url, 'listShow', "")
+        #addDir(translation(30007), baseUrl+"/ZDFmediathek/senderstartseite/sst2/1209114", 'listVideos', "")
+        #addDir(translation(30006), baseUrl+"/ZDFmediathek/kanaluebersicht/aktuellste/857392", 'listVideos', "")
+        #addDir(translation(30005), baseUrl+"/ZDFmediathek/senderstartseite/sst0/1209122", 'listVideos', "")
+        #addDir(translation(30008), baseUrl+"/ZDFmediathek/senderstartseite/sst1/1209122", 'listShows', "")
+        #addDir(translation(30007), baseUrl+"/ZDFmediathek/senderstartseite/sst2/1209122", 'listVideos', "")
+        xbmcplugin.endOfDirectory(pluginhandle)
+
 
 
 
@@ -522,6 +548,8 @@ name = urllib.unquote_plus(params.get('name', ''))
 
 if mode == 'listChannel':
     listChannel(url)
+elif mode == 'listChannelNews':
+    listChannelNews(url)
 elif mode == 'listVideos':
     listVideos(url)
 elif mode == 'listShow':
