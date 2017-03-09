@@ -52,6 +52,62 @@ def index():
    addDir("ShantTV", "2", 'listChannel', baseUrl+"/uploads/images/channels/banners/shant-1_1601x600.jpg")
    addDir("H1", "6", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
    addDir("Armnews", "4", 'listChannel', baseUrl+"/uploads/images/channels/banners/armnewsbanner.jpg")
+   addDir("Megre 1 ","http://cdn1.seriadata.net/video/C7BsclZgxf2-6eidwhu6ZQ/1/9/1977/1/1.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 2 ","http://cdn1.seriadata.net/video/9HfI2DWuMXqcPJZ2_iHHCA/1/9/1977/1/2.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 3 ","http://cdn1.seriadata.net/video/EjjhWS1BJuHUqDU7HFTU-A/1/9/1977/1/3.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 4 ","http://cdn1.seriadata.net/video/Doo9iJZbUy9QWmMJpnP_Iw/1/9/1977/1/4.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 5 ","http://cdn1.seriadata.net/video/ZKXn7TnObN6YihI7I6W5Yw/1/9/1977/1/5.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 6 ","http://cdn1.seriadata.net/video/xA-h3jeYGdSIYrjWQgzHRg/1/9/1977/1/6.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 7 ","http://cdn1.seriadata.net/video/ocKx6M7_420uC3Bu4tv9RA/1/9/1977/1/7.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 8 ","http://cdn1.seriadata.net/video/xjYV4aFxba_hVj1eTsNcqw/1/9/1977/1/8.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 9 ","http://cdn1.seriadata.net/video/4fysDAOAhAWeK4ec2psvng/1/9/1977/1/9.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 10 ","http://cdn1.seriadata.net/video/ySn07KMmCPRAeXc8FcrxpA/1/9/1977/1/10.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 11 ","http://cdn1.seriadata.net/video/ZbyKS0QBiKJo-7Ds2N_Efw/1/9/1977/1/11.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 12 ","http://cdn1.seriadata.net/video/w6NmcpQMC1o-KfDHb0VoeQ/1/9/1977/1/12.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 13 ","http://cdn1.seriadata.net/video/Ixfyv5y0l80P1elCU5WUqA/1/9/1977/1/13.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 14 ","http://cdn1.seriadata.net/video/m0UgSzSMh4Q2KgeJN-3aoA/1/9/1977/1/14.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 15 ","http://cdn1.seriadata.net/video/svKZQ_PAp8xTs9ec9oxh_Q/1/9/1977/1/15.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 16 ","http://cdn1.seriadata.net/video/h5ZGBrMaraDO46_KwgGeFQ/1/9/1977/1/16.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 17 ","http://cdn1.seriadata.net/video/SrCJjoDT3Ykrraz1d_tAKg/1/9/1977/1/17.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 18 ","http://cdn1.seriadata.net/video/1lGvGYLnjuKOuV3qrungnQ/1/9/1977/1/18.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 19 ","http://cdn1.seriadata.net/video/cEhrL7KE207gLZC-KOMTgw/1/9/1977/1/19.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 20 ","http://cdn1.seriadata.net/video/2fdxR5052NLBofcrQXppeg/1/9/1977/1/20.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 21 ","http://cdn1.seriadata.net/video/wwIavckA42EtDPquI8HrWg/1/9/1977/1/21.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 22 ","http://cdn1.seriadata.net/video/A6npfIGw8amfbiUPxBgQoA/1/9/1977/1/22.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 23 ","http://cdn1.seriadata.net/video/Z8lKgKIBupk1ne5OyUSMIQ/1/9/1977/1/23.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 24 ","http://cdn1.seriadata.net/video/p5uxsvuIqugZyV7YIVQhTA/1/9/1977/1/24.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 25 ","http://cdn1.seriadata.net/video/-3xVh56PU-FjGRc6BIdrGA/1/9/1977/1/25.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 26 ","http://cdn1.seriadata.net/video/guTW-iYsirh1_9eUQ_638g/1/9/1977/1/26.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 27 ","http://cdn1.seriadata.net/video/7M2rg0lGrV0NwHRUcYQGNg/1/9/1977/1/27.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 28 ","http://cdn1.seriadata.net/video/4t0sJSBYe_1e8EANu-6vOQ/1/9/1977/1/28.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 29 ","http://cdn1.seriadata.net/video/Ti6CFWBo8L5JVi6LfJWm6Q/1/9/1977/1/29.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 30 ","http://cdn1.seriadata.net/video/op_6Y8l0ZFnXYE0RTULulw/1/9/1977/1/30.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 31 ","http://cdn1.seriadata.net/video/3v7lAkIKnO3MzHZHOMPOCw/1/9/1977/1/31.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 32 ","http://cdn1.seriadata.net/video/sxn9yMSrNKHlFpOk2QPE2Q/1/9/1977/1/32.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 33 ","http://cdn1.seriadata.net/video/cZ7cSxxCYHcNTck45olPew/1/9/1977/1/33.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 34 ","http://cdn1.seriadata.net/video/QI_-0ZWXnp_ZQpHsZep0gg/1/9/1977/1/34.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 35 ","http://cdn1.seriadata.net/video/7Y9A1fOCKKzpAs1VKUTSjg/1/9/1977/1/35.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 36 ","http://cdn1.seriadata.net/video/Yjk3VfVRlK1hWOjc5TQVbg/1/9/1977/1/36.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 37 ","http://cdn1.seriadata.net/video/PGfr377eKByGCmnRL7V7kw/1/9/1977/1/37.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 38 ","http://cdn1.seriadata.net/video/jDSx9mG2tLLghI3nnZ2c9A/1/9/1977/1/38.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 39 ","http://cdn1.seriadata.net/video/VrvbualNl8I9TSaTeuTwxg/1/9/1977/1/39.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 40 ","http://cdn1.seriadata.net/video/ympyLcwk7dG34YtkQlxaBQ/1/9/1977/1/40.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 41 ","http://cdn1.seriadata.net/video/jBLg0vm491yFiMj8rNDobw/1/9/1977/1/41.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 42 ","http://cdn1.seriadata.net/video/x3Ibfz24Tk4AYVNFVR4Wmg/1/9/1977/1/42.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 43 ","http://cdn1.seriadata.net/video/exxQEd_63W6PT8NABTwHxQ/1/9/1977/1/43.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 44 ","http://cdn1.seriadata.net/video/9vsAdQuY8T1clRHHu5smcw/1/9/1977/1/44.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 45 ","http://cdn1.seriadata.net/video/5bEXzuTpGJAGctHNAsC1BA/1/9/1977/1/45.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 46 ","http://cdn1.seriadata.net/video/DhY2iLLHa4JVslcW5yANTA/1/9/1977/1/46.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 47 ","http://cdn1.seriadata.net/video/kVMe3AsGIZoLHRx_8V9Htg/1/9/1977/1/47.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 48 ","http://cdn1.seriadata.net/video/5KWXJ-oUV0so_XcxtQletQ/1/9/1977/1/48.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 49 ","http://cdn1.seriadata.net/video/sPFcIb6OhQWPRVR34lY24g/1/9/1977/1/49.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 50 ","http://cdn1.seriadata.net/video/apyA_NbevD065PbAb3xIMw/1/9/1977/1/50.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 51 ","http://cdn1.seriadata.net/video/dfXMnpqtjWou4YRekBrbGQ/1/9/1977/1/51.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 52 ","http://cdn1.seriadata.net/video/Rs6TvdF-Fa4LX-adZQzKNg/1/9/1977/1/52.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 53 ","http://cdn1.seriadata.net/video/RRzJahU0LOtI9l6hmcPpuQ/1/9/1977/1/53.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 54 ","http://cdn1.seriadata.net/video/g2BOzwwOEuW8eHIbyq4bMg/1/9/1977/1/54.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 55 ","http://cdn1.seriadata.net/video/uReJt4ffrDkPdUDc4ajrxg/1/9/1977/1/55.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
+   addDir("Megre 56 ","http://cdn1.seriadata.net/video/LWXMJeXdIz8afGExLOhfCg/1/9/1977/1/56.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
    xbmcplugin.endOfDirectory(pluginhandle)
 
 
@@ -174,6 +230,16 @@ def get_yt_video_id(url):
     else:
         raise ValueError
 
+
+def playPure(url):
+
+
+       li = xbmcgui.ListItem(label="Armlook Stream", iconImage="http://www.armlook.com/images/logo.png", path="zzzz")
+       li.setInfo(type='Video', infoLabels={ "Title": "Armlook Video" })
+       li.setProperty('IsPlayable', 'true')
+       xbmc.Player().play(item=url, listitem=li)
+
+
 def playVideo(url):
 
 
@@ -192,7 +258,7 @@ def playVideo(url):
     if len(match)!=0:
         
        li = xbmcgui.ListItem(label="Armlook Stream", iconImage="http://www.armlook.com/images/logo.png", path=match[0])
-       li.setInfo(type='Video', infoLabels={ "Title": "pizdec" })
+       li.setInfo(type='Video', infoLabels={ "Title": "Armlook Video" })
        li.setProperty('IsPlayable', 'true')
        xbmc.Player().play(item=match[1], listitem=li)
     else:
@@ -534,6 +600,8 @@ elif mode == 'listVerpasst':
     listVerpasst(url)
 elif mode == 'playVideo':
     playVideo(url)
+elif mode == 'playPure':
+   playPure(url)
 elif mode == 'play100sec':
     play100sec()
 elif mode == 'queueVideo':
