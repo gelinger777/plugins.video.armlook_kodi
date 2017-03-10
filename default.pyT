@@ -43,59 +43,19 @@ def index():
    import urllib, json
 
    #addDir("ArmeniaLiveTVs", "1", 'listLiveChannels', baseUrl+"/uploads/images/channels/banners/armenia.jpg") 
-   addDir("ArmeniaTV Armlook", "1", 'listChannel', baseUrl+"/uploads/images/channels/banners/armenia.jpg")  
-   addDir("ArmeniaTV LIVE", "armenia", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/armenia.jpg")
-   addDir("USArmenia LIVE", "usarmenia", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/armenia.jpg")
-
-
-   addDir("Kentron Armlook", "3", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_522fc19eb4449.jpg")
-   addDir("Kentron LIVE", "kentron", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/img_522fc19eb4449.jpg")
-
-
-   addDir("Yerkir Media Armlook", "5", 'listChannel', baseUrl+"/uploads/images/channels/banners/yerk.jpg")
-   addDir("Yerkir Media LIVE", "erkir", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/yerk.jpg")
-    
-   addDir("LaymTV Armlook", "20", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/laym.jpg")
-  
-   addDir("AR-TV Armlook", "22", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/artv.jpg")
-   addDir("AR-TV LIVE", "artv", 'playLiveVideo', baseUrl+"/uploads/images/channels/thumbnails/artv.jpg")
-
-
-
+   addDir("ArmeniaTV Archive", "1", 'listChannel', baseUrl+"/uploads/images/channels/banners/armenia.jpg")  
+   addDir("ArmeniaTV LIVE", "armenia", 'listChannelLive', baseUrl+"/uploads/images/channels/banners/armenia.jpg")
+   addDir("Kentron", "3", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_522fc19eb4449.jpg")
+   addDir("Yerkir Media", "5", 'listChannel', baseUrl+"/uploads/images/channels/banners/yerk.jpg")
+   addDir("LaymTV", "20", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/laym.jpg")
+   addDir("AR-TV", "22", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/artv.jpg")
    addDir("Dar21", "19", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/21.jpg")
-   addDir("Dar21", "dar21", 'playVideo', baseUrl+"/uploads/images/channels/thumbnails/21.jpg")
-   
-
-   addDir("ShoghakatTV Armlook", "21", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/shogh-541.jpg")
-  
-
-   addDir("PanArmenianTV Armlook", "21", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/img_54d2f9a578d1b.jpg")
-   addDir("PanArmenianTV Live", "panarmenian", 'playLiveVideo', baseUrl+"/uploads/images/channels/thumbnails/img_54d2f9a578d1b.jpg")
-  
-
-
-   addDir("ATV Armlook", "25", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_548ea6775a962.jpg")
-   addDir("ATV Live", "atv", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/img_548ea6775a962.jpg")
-
-
-
-
-   addDir("ShantTV Armlook", "2", 'listChannel', baseUrl+"/uploads/images/channels/banners/shant-1_1601x600.jpg")
-
-   addDir("ShantTV LIVE", "shant", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/shant-1_1601x600.jpg")
-
-   addDir("H1 Armlook", "6", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
-   addDir("H1 LIVE", "h1", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
-
-
-   addDir("Armnews Armlook", "4", 'listChannel', baseUrl+"/uploads/images/channels/banners/armnewsbanner.jpg")
-
-   addDir("Armnews Live", "armnews", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/armnewsbanner.jpg")
-
-
-
-
-
+   addDir("ShoghakatTV", "21", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/shogh-541.jpg")
+   addDir("PanArmenianTV", "21", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/img_54d2f9a578d1b.jpg")
+   addDir("ATV", "25", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_548ea6775a962.jpg")
+   addDir("ShantTV", "2", 'listChannel', baseUrl+"/uploads/images/channels/banners/shant-1_1601x600.jpg")
+   addDir("H1", "6", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
+   addDir("Armnews", "4", 'listChannel', baseUrl+"/uploads/images/channels/banners/armnewsbanner.jpg")
    addDir("Megre 1 ","http://cdn1.seriadata.net/video/C7BsclZgxf2-6eidwhu6ZQ/1/9/1977/1/1.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
    addDir("Megre 2 ","http://cdn1.seriadata.net/video/9HfI2DWuMXqcPJZ2_iHHCA/1/9/1977/1/2.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
    addDir("Megre 3 ","http://cdn1.seriadata.net/video/EjjhWS1BJuHUqDU7HFTU-A/1/9/1977/1/3.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
@@ -209,7 +169,7 @@ def listChannel(url):
 
 
 def listChannelLive(url):
-        print "mtaaav"
+
 
         url="http://gisher.org/services/armtv.html?tv="+url+"";
        # req = urllib2.Request(url)
@@ -217,11 +177,12 @@ def listChannelLive(url):
         #response = urllib2.urlopen(req)
         #print response  
         content="http://www.armlook.com/episode/armenia-tv/full-house-3/episode-7-anons/4747"
-
-        k2=getUrl(content)
-        print k2
-
-        print "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+         
+        contik=getUrl(content)
+        print contik
+        response = requests.get(content)
+        print (response.status_code)
+        print (response.content)
         url="https://lola.gisher.org/tv/armeniatv.m3u8?st=88XsRblriknTuEvCKmcjLA&e=1489107793"
            
         addDir("Play Stream"+url, url, 'playPure', "")
@@ -348,22 +309,13 @@ def playVideo(url):
 
 def playLiveVideo(url):
 
-
-
-
-    print "pppppppppppppppppppppppppppppppppppppppppppppppppP:"
-
-    url="https://gisher.org/services/armtv.html?tv="+url+"";
-    k2=getUrl(url)
-    #print k2
+    #PRINT "ayoooooooooooooooo"
     #url=url
     print url
-    print "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
     #content = getUrl(url)
     #print "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"+content
-    match = re.compile('file: "(.+?)",stre', re.DOTALL).findall(k2)
-    streamUrl= match[0]
-    playPure(streamUrl)
+    #match = re.compile('file: "(.+?)",stretching:"', re.DOTALL).findall(content)
+    #print match[0]
     #listitem = xbmcgui.ListItem(path=match[0][0] + match[0][1] + " swfUrl=http://www.arte.tv/flash/mediaplayer/mediaplayer.swf live=1 swfVfy=1")
     #xbmcplugin.setResolvedUrl(pluginhandle, True, listitem)
     #listitem = xbmcgui.ListItem(match[1])
