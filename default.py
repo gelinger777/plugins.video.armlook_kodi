@@ -42,60 +42,35 @@ def index():
  
    import urllib, json
 
-   #addDir("ArmeniaLiveTVs", "1", 'listLiveChannels', baseUrl+"/uploads/images/channels/banners/armenia.jpg") 
-   addDir("ArmeniaTV Armlook", "1", 'listChannel', baseUrl+"/uploads/images/channels/banners/armenia.jpg")  
    addDir("ArmeniaTV LIVE", "armenia", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/armenia.jpg")
    addDir("USArmenia LIVE", "usarmenia", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/armenia.jpg")
 
 
-   addDir("Kentron Armlook", "3", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_522fc19eb4449.jpg")
    addDir("Kentron LIVE", "kentron", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/img_522fc19eb4449.jpg")
 
 
-   addDir("Yerkir Media Armlook", "5", 'listChannel', baseUrl+"/uploads/images/channels/banners/yerk.jpg")
    addDir("Yerkir Media LIVE", "erkir", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/yerk.jpg")
     
-   addDir("LaymTV Armlook", "20", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/laym.jpg")
-  
-   addDir("AR-TV Armlook", "22", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/artv.jpg")
+   
    addDir("AR-TV LIVE", "artv", 'playLiveVideo', baseUrl+"/uploads/images/channels/thumbnails/artv.jpg")
 
 
 
-   addDir("Dar21", "19", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/21.jpg")
    addDir("Dar21", "dar21", 'playVideo', baseUrl+"/uploads/images/channels/thumbnails/21.jpg")
-   
-
-   addDir("ShoghakatTV Armlook", "21", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/shogh-541.jpg")
-  
-
-   addDir("PanArmenianTV Armlook", "21", 'listChannel', baseUrl+"/uploads/images/channels/thumbnails/img_54d2f9a578d1b.jpg")
    addDir("PanArmenianTV Live", "panarmenian", 'playLiveVideo', baseUrl+"/uploads/images/channels/thumbnails/img_54d2f9a578d1b.jpg")
   
 
 
-   addDir("ATV Armlook", "25", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_548ea6775a962.jpg")
    addDir("ATV Live", "atv", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/img_548ea6775a962.jpg")
 
 
 
 
-   addDir("ShantTV Armlook", "2", 'listChannel', baseUrl+"/uploads/images/channels/banners/shant-1_1601x600.jpg")
-
    addDir("ShantTV LIVE", "shant", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/shant-1_1601x600.jpg")
-
-   addDir("H1 Armlook", "6", 'listChannel', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
    addDir("H1 LIVE", "h1", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
 
-
-   addDir("Armnews Armlook", "4", 'listChannel', baseUrl+"/uploads/images/channels/banners/armnewsbanner.jpg")
-
    addDir("Armnews Live", "armnews", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/armnewsbanner.jpg")
-   addDir("Megre 5 English ","https://video.watcheng.tv/ram/shows/poirot/1-5_360.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
-   addDir("Megre 6 ENGlish ","https://video.watcheng.tv/ram/shows/poirot/1-6_360.mp4","playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
-   addDir("Megre 7 English ","https://video.watcheng.tv/ram/shows/poirot/1-7_360.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg") 
-   addDir("Megre 8 ENGlish","https://video.watcheng.tv/ram/shows/poirot/1-8_360.mp4", "playPure","http://cdn0.seriadata.net/4/0/4000.jpg")
-
+   
    xbmcplugin.endOfDirectory(pluginhandle)
 
 
@@ -103,8 +78,6 @@ def listShow(url):
 
 
         content="http://www.armlook.com/program/allEpisodes/"+url+"/limit/50/offset/0";
-        print "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-        print content
         req = urllib2.Request(content)
         req.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 6.1; rv:22.0) Gecko/20100101 Firefox/22.0')
         response = urllib2.urlopen(req)
