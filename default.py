@@ -68,7 +68,7 @@ def index():
 
    addDir("ShantTV LIVE", "shant", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/shant-1_1601x600.jpg")
    addDir("H1 LIVE", "h1", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
-
+   addDir("H2 LIVE", "h2", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/img_524a280b02277.jpg")
    addDir("Armnews Live", "armnews", 'playLiveVideo', baseUrl+"/uploads/images/channels/banners/armnewsbanner.jpg")
    
    xbmcplugin.endOfDirectory(pluginhandle)
